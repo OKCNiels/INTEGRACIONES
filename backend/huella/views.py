@@ -48,7 +48,7 @@ class HuellaApiView(APIView):
         # -----------------------------------------}
         plantilla = base64.b64encode(bytes(tmp)).decode('utf-8')
 
-        huella = HuellaModel(plantila=plantilla, finger_id=finger_id, score=score, usuario_id=request.data.get('usuario_id') ,dedo_id=request.data.get('dedo_id'), estado=1)
+        huella = HuellaModel(plantila=plantilla, finger_id=finger_id, score=score, usuario_id=request.data.get('usuario_id') ,dedo_id=2, estado=1)
         if img:
             huella.imagen.save("huella_1.png", ContentFile(img), save=False)
         huella.save()
