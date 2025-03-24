@@ -6,9 +6,11 @@ class HuellaModel(models.Model):
     usuario_id = models.IntegerField()
     dedo_id = models.IntegerField()
     plantila = models.TextField()
-    imagen = models.ImageField(upload_to='huellas/', null=True, blank=True)
+    imagen = models.ImageField(upload_to='huella/images/', null=True, blank=True)
     estado = models.IntegerField()
     
+    finger_id = models.IntegerField(null=True, blank=True)
+    score = models.FloatField(null=True, blank=True)
     # created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=False, auto_now_add=True)
     # deleted_at = models.DateTimeField(auto_now=False, auto_now_add=False)
