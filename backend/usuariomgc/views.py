@@ -39,7 +39,3 @@ def obtener(request,email):
 #     else:
 #         return JsonResponse({'error': 'Método no permitido'}, status=405)
     
-class HuellaApiView(APIView):
-    def post(self, request):
-        # dedo_id = request.data.get(0dedo_id)
-        return Response(status=status.HTTP_200_OK, data='ss')

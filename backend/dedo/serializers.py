@@ -1,9 +1,9 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
-from huella.models import HuellaModel
+from dedo.models import DedoModel
 
-class HuellaSerializer(serializers.ModelSerializer):
+class DedoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = HuellaModel
+        model = DedoModel
         fields = '__all__'
         # fields = ['id']
