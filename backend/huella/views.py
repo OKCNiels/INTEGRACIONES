@@ -72,6 +72,9 @@ class CompararApiView(APIView):
     permission_classes = [IsAuthenticated] # oliga al usuario a envair el token por el api para el consumo de las rutas
     def post(self, request):
         usuario = UsuariomgcSerializer(UsuariomgcModel.objects.filter(activo=True, deleted_at__isnull=True, email=request.data.get('email')), many=True)
+        
+        if usuario.data[0]['habilitar_huella'] == False :
+            return Response(status=status.HTTP_200_OK,data={"tipo":True},)
         huella = HuellaSerializer(HuellaModel.objects.filter(estado=1, usuario_id= usuario.data[0]['id']) ,many=True)
         
         
