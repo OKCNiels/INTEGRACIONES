@@ -1,1 +1,4 @@
-venv/
+venv
+/backend/backend/settings.py
+settings.py
+serializers.py
