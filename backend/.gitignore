@@ -1,3 +1,4 @@
 venv
 /backend/backend/settings.py
 settings.py
+__pycache__/
