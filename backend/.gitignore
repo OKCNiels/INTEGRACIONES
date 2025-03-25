@@ -2,3 +2,4 @@ venv
 /backend/backend/settings.py
 settings.py
 **/__pycache__/
+**/migrations/
