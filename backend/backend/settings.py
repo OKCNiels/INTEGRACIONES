@@ -85,17 +85,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-<<<<<<< HEAD
         'NAME': 'test_dberp',
         'USER': 'okcomput_erpuser',
         'PASSWORD': 'snJT9GM.Piy_LVh',
         'HOST': '192.168.250.66',
-=======
-        'NAME': 'okc2',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
->>>>>>> 8cff10b91364b48c3a2c33173fcfcce1db887a16
         'PORT': '5432',
         'OPTIONS': {
             'options': '-c search_path=mgcp_integraciones,mgcp_usuarios,public'
