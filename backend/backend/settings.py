@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'okc25',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'NAME': 'test_dberp',
+        'USER': 'okcomput_erpuser',
+        'PASSWORD': 'snJT9GM.Piy_LVh',
+        'HOST': '192.168.250.66',
         'PORT': '5432',
         'OPTIONS': {
             'options': '-c search_path=mgcp_integraciones,mgcp_usuarios,public'
@@ -149,6 +149,7 @@ REST_FRAMEWORK = {
 # indica el origin permitido para su comunicacion 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:9000",
+    "https://qamgc.solutionsokc.pe/",
 ]
 # https://www.youtube.com/watch?v=zzBO8qRq_K4&t=640s
 # https://www.youtube.com/watch?v=q21IKJUy0dI&t=906s
